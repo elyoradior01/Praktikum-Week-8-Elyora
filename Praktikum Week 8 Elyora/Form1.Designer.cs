@@ -43,6 +43,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblStadium = new System.Windows.Forms.Label();
             this.lblCapacity = new System.Windows.Forms.Label();
+            this.dgvMatch = new System.Windows.Forms.DataGridView();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.labeltanggal = new System.Windows.Forms.Label();
+            this.lblTanggal = new System.Windows.Forms.Label();
+            this.labelskr = new System.Windows.Forms.Label();
+            this.lblSkor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMatch)).BeginInit();
             this.SuspendLayout();
             // 
             // cbHome
@@ -180,11 +187,73 @@
             this.lblCapacity.TabIndex = 14;
             this.lblCapacity.Text = "label4";
             // 
+            // dgvMatch
+            // 
+            this.dgvMatch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMatch.Location = new System.Drawing.Point(12, 574);
+            this.dgvMatch.Name = "dgvMatch";
+            this.dgvMatch.RowHeadersWidth = 62;
+            this.dgvMatch.RowTemplate.Height = 28;
+            this.dgvMatch.Size = new System.Drawing.Size(937, 350);
+            this.dgvMatch.TabIndex = 15;
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(328, 400);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(92, 34);
+            this.btnCheck.TabIndex = 16;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // labeltanggal
+            // 
+            this.labeltanggal.AutoSize = true;
+            this.labeltanggal.Location = new System.Drawing.Point(279, 470);
+            this.labeltanggal.Name = "labeltanggal";
+            this.labeltanggal.Size = new System.Drawing.Size(74, 20);
+            this.labeltanggal.TabIndex = 17;
+            this.labeltanggal.Text = "Tanggal :";
+            // 
+            // lblTanggal
+            // 
+            this.lblTanggal.AutoSize = true;
+            this.lblTanggal.Location = new System.Drawing.Point(408, 470);
+            this.lblTanggal.Name = "lblTanggal";
+            this.lblTanggal.Size = new System.Drawing.Size(51, 20);
+            this.lblTanggal.TabIndex = 18;
+            this.lblTanggal.Text = "label4";
+            // 
+            // labelskr
+            // 
+            this.labelskr.AutoSize = true;
+            this.labelskr.Location = new System.Drawing.Point(279, 527);
+            this.labelskr.Name = "labelskr";
+            this.labelskr.Size = new System.Drawing.Size(50, 20);
+            this.labelskr.TabIndex = 19;
+            this.labelskr.Text = "Skor :";
+            // 
+            // lblSkor
+            // 
+            this.lblSkor.AutoSize = true;
+            this.lblSkor.Location = new System.Drawing.Point(408, 527);
+            this.lblSkor.Name = "lblSkor";
+            this.lblSkor.Size = new System.Drawing.Size(51, 20);
+            this.lblSkor.TabIndex = 20;
+            this.lblSkor.Text = "label4";
+            // 
             // FormTanding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(994, 936);
+            this.Controls.Add(this.lblSkor);
+            this.Controls.Add(this.labelskr);
+            this.Controls.Add(this.lblTanggal);
+            this.Controls.Add(this.labeltanggal);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.dgvMatch);
             this.Controls.Add(this.lblCapacity);
             this.Controls.Add(this.lblStadium);
             this.Controls.Add(this.label3);
@@ -203,6 +272,7 @@
             this.Name = "FormTanding";
             this.Text = "Hasil Pertandingan";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMatch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,6 +295,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblStadium;
         private System.Windows.Forms.Label lblCapacity;
+        private System.Windows.Forms.DataGridView dgvMatch;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Label labeltanggal;
+        private System.Windows.Forms.Label lblTanggal;
+        private System.Windows.Forms.Label labelskr;
+        private System.Windows.Forms.Label lblSkor;
     }
 }
 
